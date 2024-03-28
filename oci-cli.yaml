@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: oci-cli
+  labels:
+    app: oci-cli
+spec:
+  containers:
+  - image: jctarla/oci-cli:x86
+    command:
+      - sleep
+      - "3600"
+    imagePullPolicy: Always
+    name: oci-cli
+  restartPolicy: Always
+
+
