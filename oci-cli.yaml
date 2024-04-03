@@ -12,6 +12,8 @@ spec:
       - "3600"
     imagePullPolicy: Always
     name: oci-cli
+  imagePullSecrets:
+    - name: docker-registry
   restartPolicy: Always
 
 
